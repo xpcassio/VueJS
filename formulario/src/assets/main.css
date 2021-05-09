@@ -1,0 +1,161 @@
+main {
+  display: flex;
+}
+
+main div {
+  flex: 1;
+  -ms-flex: 1; /* IE 10 */
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+/* ---------- FORMULARIO ---------- */
+.boxFormulario {
+  border: 3px solid black;
+  border-radius: 6px;
+  width: 500px;
+  /*min-height: 800px;*/
+  height: auto;
+  margin: 0 auto;
+
+  padding: 20px 50px;
+  /*padding-left: 50px;*/
+  /*padding-right: 50px;*/
+}
+
+.itemFormulario {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.itemFormulario label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.itemFormulario select {
+  display: inline-block;
+  /*width: 50%;*/
+}
+
+.itemFormulario textarea {
+  display: inline-block;
+  width: 49%;
+}
+
+.itemFormulario input {
+  display: inline-block;
+  /*width: 50%;*/
+}
+
+.p-requerido {
+  color: red;
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+/* ---------- SELECT ---------- */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  /*border: 0 !important;*/
+  /*background: #2c3e50;*/
+  /*background-image: none;*/
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 3em;
+  line-height: 3;
+  /*background: #2c3e50;*/
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  /*color: #fff;*/
+  cursor: pointer;
+}
+
+.select:after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #c1c1c1;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+/* ---------- INPUT ---------- */
+/*.input {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}*/
+
+.input input {
+  width: 45%;
+  height: 3em;
+  padding: 0 1em;
+}
+
+/* ---------- BOTAO ---------- */
+.botaoProjeto {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color:#f9f9f9;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+
+.botaoProjeto:hover {
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color:#e9e9e9;
+}
+
+.botaoProjeto:active {
+  position:relative;
+  top:1px;
+}
